@@ -1,4 +1,38 @@
 /**************************************************************************************************************************************
-
 I use arduino uno to implement this algorithm
+我利用arduino uno來實作這個演算法
 **************************************************************************************************************************************/
+unsigned long nowTime,lastTime,lastTime;//現在時間、上次時間
+double timeChange;//時間間隔
+double feedback,output,setPoint;//回授量、輸出量、設定點
+double error,errorSum,dError,lastError;//誤差、積分誤差、微分誤差、上次誤差
+double kp,ki,kd;//PID參數
+
+void setup() {
+
+}
+
+void loop() {
+
+nowTime = millis();
+  if(nowTime-lastTime>=100){
+    Serial.println(nowTime);
+    pid_compute();
+  }
+}
+void pid_compute(){
+  /* 計算時間差*/
+  timeChange = (double)(nowTime - lastTime);
+
+  /* 計算誤差量*/
+  error = setPoint - feedback;
+  errorSum += (error * timeChange);
+  dError = (error - lastError) / timeChange;
+
+  /* 計算PID輸出*/
+  output = kp * error + ki * errorSum + kd * dError;
+
+  /* 誤差與時間暫存*/
+  lastError = error;
+  lastTime = nowTime;
+}
