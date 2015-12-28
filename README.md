@@ -22,6 +22,11 @@ millis() 函式會回傳 Arduino 從開始執行程式一直到目前為止的�
 
 ![pid4](https://cloud.githubusercontent.com/assets/13445632/12025942/b206e0ba-adee-11e5-83f5-12d814e22fc0.png)
 
+PID Controller實作
+
+![pid6](https://cloud.githubusercontent.com/assets/13445632/12026058/2ef68fd4-adf0-11e5-83c0-04e2ea6a8c83.png)
+
+![pid5](https://cloud.githubusercontent.com/assets/13445632/12026088/6ea0dd7e-adf0-11e5-9203-095ffece1a66.png)
 
 參考資料
 
