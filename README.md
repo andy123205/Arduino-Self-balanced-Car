@@ -20,7 +20,7 @@ millis() 函式簡介[1]
 millis() 函式會回傳 Arduino 從開始執行程式一直到目前為止的千分之一秒數值(number of milliseconds)，這個數值在大約 50 天後會溢位(overflow)，屆時會從 0 開始計數。
 ![pid3](https://cloud.githubusercontent.com/assets/13445632/12025809/492f5eb0-aded-11e5-9d51-d490ae25fe26.png)
 
-![pid4](https://cloud.githubusercontent.com/assets/13445632/12025807/492e3da0-aded-11e5-94c5-30a572d586ea.png)
+![pid4](https://cloud.githubusercontent.com/assets/13445632/12025942/b206e0ba-adee-11e5-83f5-12d814e22fc0.png)
 
 
 參考資料
