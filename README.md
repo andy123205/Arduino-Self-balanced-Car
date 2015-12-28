@@ -6,12 +6,12 @@ Introduction for PID
 積分實作
 
 黎曼和:errorSum += error * timeChange
-![pid1](https://cloud.githubusercontent.com/assets/13445632/12025802/3f752fa8-aded-11e5-8c81-0abdfaa9e82f.png)
+![pid1](https://cloud.githubusercontent.com/assets/13445632/12025971/199cd16c-adef-11e5-9fe0-b610b202cd03.png)
 
 微分實作
 
 斜率: dError = error / timeChange
-![pid2](https://cloud.githubusercontent.com/assets/13445632/12025808/492f4876-aded-11e5-9c1c-5bd14edd6d00.png)
+![pid2](https://cloud.githubusercontent.com/assets/13445632/12025973/1d369e8e-adef-11e5-972e-6e51ef14cdac.png)
 
 時間軸的概念
 
