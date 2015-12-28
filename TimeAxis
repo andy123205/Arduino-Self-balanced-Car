@@ -1,0 +1,24 @@
+/****************************************************************************************************************************************
+
+Implemention for time axis
+****************************************************************************************************************************************/
+
+
+
+unsigned long nowTime,lastTime;//現在時間、上次時間
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+ 
+  nowTime = millis();
+  if(nowTime-lastTime>=100){
+    lastTime = nowTime;
+    Serial.println(nowTime);
+}
+  
+}
